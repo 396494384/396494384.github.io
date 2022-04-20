@@ -167,4 +167,31 @@ Markdown是一种纯文本格式的标记语言。通过简单的标记语法，
 - | :-: | -: 
 内容 | 内容 | 内容
 内容 | 内容 | 内容
+### 代码
+---
+~~~
+示例：
+单行代码
+` var str = "string"; `
+~~~
 
+效果如下：  
+`var str = "string";`
+
+~~~
+示例：
+多行代码
+
+```
+function str(){
+	return "string";
+}
+```
+~~~
+
+效果如下：
+```
+function str(){
+	return "string";
+}
+```
