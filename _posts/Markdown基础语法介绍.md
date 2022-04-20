@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Markdown语法介绍（详细）"
-date: 2012-05-22
-excerpt: "A ton of text to test readability."
+title: "Markdown基础语法介绍"
+date: 2022-04-20
+excerpt: "Markdown是一种纯文本格式的标记语言。通过简单的标记语法，它可以使普通文本内容具有一定的格式。"
 tags: [Markdown]
 comments: true
 ---
