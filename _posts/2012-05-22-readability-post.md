@@ -205,4 +205,5 @@ title可加可不加
 
 效果如下：
 
-[超链接名](超链接地址 "超链接title")
+[GitHub](http://github.com)
+[百度一下](http://baidu.com)
