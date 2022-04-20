@@ -1,4 +1,4 @@
-- title: Blog
-  url: /
-- title: About
-  url: /about/
+# Site navigation links
+
+- title: Projects
+  url: /projects/
