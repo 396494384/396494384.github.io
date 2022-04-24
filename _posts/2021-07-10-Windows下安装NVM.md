@@ -57,7 +57,7 @@ nvm on/off
 //设置下载代理。不加可选参数url，显示当前代理。将url设置为none则移除代理
 nvm proxy [url]
 
-//nvm node_mirror [url] ：设置node镜像。默认是https://nodejs.org/dist/。如果不写url，则使用默认url。设置后可至安装目录settings.txt文件查看，也可直接在该文件操作。
+//设置node镜像
 nvm node_mirror [url]
 
 //设置存储不同版本node的目录。如果未设置，默认使用当前目录
