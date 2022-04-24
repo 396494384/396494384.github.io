@@ -7,69 +7,62 @@ tags: [nvm, node]
 comments: true
 ---
 
-在windows下安装node版本管理工具nvm的
+在windows下安装node版本管理工具nvm的步骤和使用方法。  
 
-- ### 创建git仓库
-  项目初始化的流程
-~~~
-// 初始化本地仓库，在当前目录下生成 .git 文件夹
-git init
-// 默认在当前目录下创建和版本库名相同的文件夹并下载版本到该文件夹下
-git clone <远程仓库的网址> 
-~~~
+- ### 卸载node
+  如果你已经安装了node，那么你需要先卸载node，如果你没有安装那直接跳过这一步到下一步。
+- ### 下载安装nvm
+  下载[nvm-windows](https://github.com/coreybutler/nvm-windows/releases)最新安装包，直接安装即可。  
+ 
+  nvm-noinstall.zip： 这个是绿色免安装版本，但是使用之前需要配置  
+  nvm-setup.zip：这是一个安装包，下载之后点击安装，无需配置就可以使用，方便。
+  Source code(zip)：zip压缩的源码
+  Sourc code(tar.gz)：tar.gz的源码，一般用于Linux系统  
+  下载nvm-setup安装包：  
+![下载nvm-setup](https://img-blog.csdnimg.cn/623d26a9b233405289a20da513a37887.png)
+  点击下载即可。
 
-- ### 代码拉取
-  这里只是基础的代码拉取
-~~~
-git pull origin <远程仓库的分支>
-~~~
+- ### 安装
+  安装nvm-setup.zip
+  安装过程比较简单，注意选择的安装目录不能有空格符。  
+  安装完成后在命令窗口输入nvm v 查看安装版本，能正确显示版本号，便说明已经成功安装。
+- ### 使用
+  1. nvm list 命令 - 显示版本列表
+```
+nvm list // 显示已安装的版本（同 nvm list installed）
+nvm list installed // 显示已安装的版本
+nvm list available // 显示所有可以下载的版本
+```
+  2. nvm install 命令 - 安装指定版本node
+```
+nvm install 10.16.2 // 安装10.16.2版本node
+nvm install latest // 安装最新版本node
+```
+  3. nvm use 命令 - 切换node版本
+```
+nvm use 10.16.2 // 使用10.16.2版本node
+```
+  4. nvm uninstall 命令 - 卸载指定版本node
+```
+nvm uninstall 10.16.2 // 卸载10.16.2版本node
+```
+  5. 其他命令
+```
+//显示node是运行在32位还是64位系统上
+nvm arch 
 
-- ### 代码提交
-```
-// 添加所有文件到缓冲区
-git add .
-// 把暂存区中的文件提交到本地仓库中并添加描述信息
-git commit -m"<描述信息>"
-// 从远程仓库获取最新版本
-git pull origin <远程仓库的分支>
-// 把本地仓库的分支推送到远程仓库的指定分支
-git push origin <远程仓库的分支>
-注: 如果操作的是master分支,可以省略origin <远程仓库的分支>;
-```
+//开启/关闭nodejs版本管理
+nvm on/off
 
-- ### 强制线上代码覆盖本地代码
-```
-git tetch --all
-git reset --hard origin/<远程仓库的分支>
-git pull
-```
+//设置下载代理。不加可选参数url，显示当前代理。将url设置为none则移除代理
+nvm proxy [url]
 
-- ### 分支操作
-  查看分支
-```
-git branch
-```
-  创建分支
-```
-git branch <分支名>
-```
-  切换分支
-```
-git checkout <分支名>
-```
-  合并某分支的内容到当前分支
-```
-git merge <分支名>
-```
-  删除分支
-```
-git branch -d <分支名>
+//设置node镜像
+nvm node_mirror [url]
+
+//设置存储不同版本node的目录。如果未设置，默认使用当前目录
+nvm root [path]
 ```
 
-- ### 查看本地仓库的状态
-```
-git status
-```
-
-
-以上只是对git命令做一个基础的说明和一些常用的命令以及组合使用的功能。
+- ### 在使用nvm中注意事项
+  1. 在用命令工具使用nvm时，最好是选择以管理员身份运行命令工具
