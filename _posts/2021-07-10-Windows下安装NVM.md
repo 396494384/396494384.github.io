@@ -1,12 +1,13 @@
 ---
 layout: post
-title: "Windows下安装NVM"
+title: "windows下安装nvm"
 date: 2021-07-10
-excerpt: "Node版本管理工具NVM的安装和使用"
-tags: [NVM, Node]
+excerpt: "node版本管理工具nvm的安装和使用"
+tags: [nvm, node]
 comments: true
 ---
 
+在windows下安装node版本管理工具nvm的
 
 - ### 创建git仓库
   项目初始化的流程
