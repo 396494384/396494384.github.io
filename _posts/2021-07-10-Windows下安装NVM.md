@@ -47,7 +47,8 @@ nvm use 10.16.2 // 使用10.16.2版本node
 nvm uninstall 10.16.2 // 卸载10.16.2版本node
 ```
   5. 其他命令  
-  6. 
+
+```
 ~~~
 //显示node是运行在32位还是64位系统上
 nvm arch 
@@ -65,6 +66,8 @@ nvm node_mirror [url]
 nvm root [path]
 
 ~~~
+```
+
 
 - ### 在使用nvm中注意事项
   1. 在用命令工具使用nvm时，最好是选择以管理员身份运行命令工具  
