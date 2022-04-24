@@ -15,12 +15,12 @@ comments: true
   下载[nvm-windows](https://github.com/coreybutler/nvm-windows/releases)最新安装包，直接安装即可。  
  
   nvm-noinstall.zip： 这个是绿色免安装版本，但是使用之前需要配置  
-  nvm-setup.zip：这是一个安装包，下载之后点击安装，无需配置就可以使用，方便。
-  Source code(zip)：zip压缩的源码
-  Sourc code(tar.gz)：tar.gz的源码，一般用于Linux系统  
-  下载nvm-setup安装包：  
+  nvm-setup.zip：这是一个安装包，下载之后点击安装，无需配置就可以使用，方便。  
+  Source code(zip)：zip压缩的源码  
+  Sourc code(tar.gz)：tar.gz的源码，一般用于Linux系统    
+  下载nvm-setup安装包：    
 ![下载nvm-setup](https://img-blog.csdnimg.cn/623d26a9b233405289a20da513a37887.png)
-  点击下载即可。
+  点击下载即可。  
 
 - ### 安装
   安装nvm-setup.zip
@@ -46,7 +46,7 @@ nvm use 10.16.2 // 使用10.16.2版本node
 ```
 nvm uninstall 10.16.2 // 卸载10.16.2版本node
 ```
-  5. 其他命令
+  5. 其他命令  
 ```
 //显示node是运行在32位还是64位系统上
 nvm arch 
