@@ -1,0 +1,74 @@
+---
+layout: post
+title: "Windows下安装NVM"
+date: 2021-07-10
+excerpt: "Node版本管理工具NVM的安装和使用"
+tags: [NVM, Node]
+comments: true
+---
+
+
+- ### 创建git仓库
+  项目初始化的流程
+~~~
+// 初始化本地仓库，在当前目录下生成 .git 文件夹
+git init
+// 默认在当前目录下创建和版本库名相同的文件夹并下载版本到该文件夹下
+git clone <远程仓库的网址> 
+~~~
+
+- ### 代码拉取
+  这里只是基础的代码拉取
+~~~
+git pull origin <远程仓库的分支>
+~~~
+
+- ### 代码提交
+```
+// 添加所有文件到缓冲区
+git add .
+// 把暂存区中的文件提交到本地仓库中并添加描述信息
+git commit -m"<描述信息>"
+// 从远程仓库获取最新版本
+git pull origin <远程仓库的分支>
+// 把本地仓库的分支推送到远程仓库的指定分支
+git push origin <远程仓库的分支>
+注: 如果操作的是master分支,可以省略origin <远程仓库的分支>;
+```
+
+- ### 强制线上代码覆盖本地代码
+```
+git tetch --all
+git reset --hard origin/<远程仓库的分支>
+git pull
+```
+
+- ### 分支操作
+  查看分支
+```
+git branch
+```
+  创建分支
+```
+git branch <分支名>
+```
+  切换分支
+```
+git checkout <分支名>
+```
+  合并某分支的内容到当前分支
+```
+git merge <分支名>
+```
+  删除分支
+```
+git branch -d <分支名>
+```
+
+- ### 查看本地仓库的状态
+```
+git status
+```
+
+
+以上只是对git命令做一个基础的说明和一些常用的命令以及组合使用的功能。
