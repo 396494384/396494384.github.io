@@ -25,7 +25,7 @@ Sourc code(tar.gz)：tar.gz的源码，一般用于Linux系统
 - ### 安装
   安装nvm-setup.zip
   安装过程比较简单，注意选择的安装目录不能有空格符。  
-  安装完成后在命令窗口输入nvm -v 查看安装版本，能正确显示版本号，便说明已经成功安装。
+  安装完成后在命令窗口输入nvm v 查看安装版本，能正确显示版本号，便说明已经成功安装。
 - ### 使用
   1. nvm list 命令 - 显示版本列表
 ```
@@ -38,7 +38,7 @@ nvm list available // 显示所有可以下载的版本
 nvm install 10.16.2 // 安装10.16.2版本node
 nvm install latest // 安装最新版本node
 ```
-  3. nvm use 命令 - 使用指定版本node
+  3. nvm use 命令 - 切换node版本
 ```
 nvm use 10.16.2 // 使用10.16.2版本node
 ```
