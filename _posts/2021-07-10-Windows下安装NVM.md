@@ -7,69 +7,18 @@ tags: [nvm, node]
 comments: true
 ---
 
-在windows下安装node版本管理工具nvm的
+在windows下安装node版本管理工具nvm的步骤和使用方法。  
 
-- ### 创建git仓库
-  项目初始化的流程
-~~~
-// 初始化本地仓库，在当前目录下生成 .git 文件夹
-git init
-// 默认在当前目录下创建和版本库名相同的文件夹并下载版本到该文件夹下
-git clone <远程仓库的网址> 
-~~~
+- ### 卸载node
+如果你已经安装了node，那么你需要先卸载node，如果你没有安装那直接跳过这一步到下一步。
+- ### 下载安装nvm
+下载[nvm-windows](https://github.com/coreybutler/nvm-windows/releases)最新安装包，直接安装即可。  
+ 
+nvm-noinstall.zip： 这个是绿色免安装版本，但是使用之前需要配置
+nvm-setup.zip：这是一个安装包，下载之后点击安装，无需配置就可以使用，方便。
+Source code(zip)：zip压缩的源码
+Sourc code(tar.gz)：tar.gz的源码，一般用于Linux系统  
+下载nvm-setup安装包：  
+![下载nvm-setup](https://img-blog.csdnimg.cn/623d26a9b233405289a20da513a37887.png)
+点击下载即可。
 
-- ### 代码拉取
-  这里只是基础的代码拉取
-~~~
-git pull origin <远程仓库的分支>
-~~~
-
-- ### 代码提交
-```
-// 添加所有文件到缓冲区
-git add .
-// 把暂存区中的文件提交到本地仓库中并添加描述信息
-git commit -m"<描述信息>"
-// 从远程仓库获取最新版本
-git pull origin <远程仓库的分支>
-// 把本地仓库的分支推送到远程仓库的指定分支
-git push origin <远程仓库的分支>
-注: 如果操作的是master分支,可以省略origin <远程仓库的分支>;
-```
-
-- ### 强制线上代码覆盖本地代码
-```
-git tetch --all
-git reset --hard origin/<远程仓库的分支>
-git pull
-```
-
-- ### 分支操作
-  查看分支
-```
-git branch
-```
-  创建分支
-```
-git branch <分支名>
-```
-  切换分支
-```
-git checkout <分支名>
-```
-  合并某分支的内容到当前分支
-```
-git merge <分支名>
-```
-  删除分支
-```
-git branch -d <分支名>
-```
-
-- ### 查看本地仓库的状态
-```
-git status
-```
-
-
-以上只是对git命令做一个基础的说明和一些常用的命令以及组合使用的功能。
